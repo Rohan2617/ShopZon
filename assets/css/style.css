@@ -1,18 +1,3 @@
-/*-----------------------------------*\
-  #style.css
-\*-----------------------------------*/
-
-/**
- * copyright 2022 codewithsadee
- */
-
-
-
-
-
-/*-----------------------------------*\
-  #CUSTOM PROPERTY
-\*-----------------------------------*/
 
 :root {
 
@@ -36,9 +21,7 @@
   --black: hsl(0, 0%, 0%);
   --white: hsl(0, 0%, 100%);
 
-  /**
-   * typography
-   */
+
 
   --ff-roboto: 'Roboto', sans-serif;
   --ff-mr_de_haviland: 'Mr De Haviland', cursive;
@@ -76,13 +59,6 @@
 
 }
 
-
-
-
-
-/*-----------------------------------*\
-  #RESET
-\*-----------------------------------*/
 
 *,
 *::before,
@@ -268,7 +244,74 @@ body.active { overflow: hidden; }
   font-size: 24px;
   transition: var(--transition-1);
 }
+.cartArea
+{
+  background-color: rgb(255, 255, 255);
+  border:1px solid;
+  border-collapse: collapse;
+  position:absolute;
+  top:150%;
+  left:-400%;
+  display:none;
+  min-height:1200%;
+  height:auto;
+  width:1400%;
+  min-width:1000%;
+  box-sizing:none;
+}
+.OrderBtn
+{
+  position:absolute;
+  bottom:0%;
+  width:100%;
+  left:0%;
+  background-color: rgb(4, 23, 91);
+  color:rgb(244, 242, 242);
+  height:15%;
+  max-height:40px;
+}
+.OrderBtn:hover
+{
+  background-color:black;
+}
+.items
+{
+  height:40%;
+  max-height: 50%;
+  width:100%;
+  gap:5%;
+  border:1px solid rgb(150, 150, 150);
+  
+  background-color: rgb(255, 255, 255);
+  display:flex;
+  flex-direction: row;
+  
+}
+.item-details
+{
+  display: flex;
+  width:40%;
+  gap:2%;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.item-img
+{
+  height:100%;
+  width:40%;
+}
+.item-labels
+{
+  font-size:80%;
 
+}
+.item-del-btn
+{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
 .header-action-btn:is(:hover, :focus) { color: var(--tan-crayola); }
 
 .header-action-btn .btn-badge {
@@ -335,7 +378,10 @@ body.active { overflow: hidden; }
   margin-block-start: 6px;
   transition: var(--transition-1);
 }
-
+.currentC,.currentL
+{
+  color:black;
+}
 .sidebar-link:is(:hover, :focus) { color: var(--tan-crayola); }
 
 .navbar { margin-block-end: 60px; }
@@ -1077,4 +1123,24 @@ a.card-meta-text:is(:hover, :focus) { color: var(--tan-crayola); }
 
   .product-list { grid-template-columns: repeat(4, 1fr); }
 
+}
+
+.loginPage
+{
+  background-color: rgb(255, 255, 255);
+  height:80%;
+  width:40%;
+  position:absolute;
+}
+.Login{
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.login-form-fieldarea
+{
+  display:flex;
+  align-items: center;
+  justify-content: center;
 }
